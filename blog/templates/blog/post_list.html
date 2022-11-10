@@ -1,16 +1,19 @@
 <html>
  <head>
+
      <title> Meu site. de Assuntos interesantes</title>
+
  </head>
   <body>
-    <div>
+    <DIV>
       <h1><a href="/">Blog Django Girls</a></h1>
-    </div>
-    <div>
-        <p>publicado no dia</p>
-        <h2><a href="/">outro texto </a></h2>
-        <p>meu texte de criação</p>
-    </div>
-
+    </DIV>
+    {% for post in posts %}
+        <div>
+            <p>publicado no dia</p>
+            <h2><a href="/">outro texto </a></h2>
+            <p>meu texte de criação</p>
+            </div>
+    {% endfor %}
   </body>
 </html>
